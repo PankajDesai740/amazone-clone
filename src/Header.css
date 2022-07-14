@@ -1,0 +1,26 @@
+.header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+   
+}
+.header__logo{
+    width:100px;
+    margin : 10px 20px 10px 20px ;
+}
+.header__search{
+    display: flex;
+    flex:1;
+}
+.header__searchBar{
+    height: 12px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+.header__SearchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #e8670c;
+   
+}
