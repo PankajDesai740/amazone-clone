@@ -2,11 +2,48 @@
     background-color: #131921;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
    
 }
 .header__logo{
     width:100px;
     margin : 10px 20px 10px 20px ;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header__optionBasket{
+    display: flex;
+    margin-top: 7px;
+    color:#dbae6b;
+    align-items: center;
+}
+.header__basketCount{
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.header__lineone{
+    font-size: 13px;
+    font-weight: 500;
+}
+.header__linetwo{
+    font-size: 15px;
+    font-weight: 500;
+}
+.header__link{
+    color: white;
+    text-decoration:none;
 }
 .header__search{
     display: flex;
