@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route
-  
+
 } from "react-router-dom";
 
 import Header from "./Header";
@@ -14,29 +14,15 @@ import Home from "./Home";
 function App() {
   return (
     <Router>
-    <div className="app">
-     <Routes>
-     <Route path='/' element={ <div><Header/><Home/></div>}/>
-     <Route path='/login' element={<div> <h1>Login Page</h1></div>}/>
-     <Route path='/checkout' element={<div><Header/> <h1>Checkout Page</h1></div>}/>
+      <div className="app">
 
-      {/* <Header />
-        <h1> Checkout Page</h1>
-      </Route>
+        <Routes>
+          <Route path='/' element={<div><Header /><Home /></div>} />
+          <Route path='/login' element={<div> <h1>Login Page</h1></div>} />
+          <Route path='/checkout' element={<div><Header /> <h1>Checkout Page</h1></div>} />
+        </Routes>
 
-      <Route path="/login">
-      <Home />
-        <h1> Login Page</h1>
-      </Route>
-     
-     <Route path="/">
-       <Header />
-       <Home />
-      </Route> */}
-    
-     </Routes>
-      
-    </div>
+      </div>
     </Router>
   );
 }
