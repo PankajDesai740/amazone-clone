@@ -1,7 +1,12 @@
-Amazone Clone :
+# Amazon Clone
 
-Technologies Used:
-1.ReactJS
-2.Firebase
-3.Material UI
+Amazon clone built with React.js and Firebase to improve the React.JS skills.
+
+## Tech Stack
+
+**React** 
+
+**Firebase** 
+
+**Material Ui**
 
