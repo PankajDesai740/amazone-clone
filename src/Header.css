@@ -1,4 +1,4 @@
-.header{
+.header {
     background-color: #131921;
     display: flex;
     align-items: center;
@@ -7,58 +7,69 @@
     z-index: 100;
 
 }
-.header__logo{
-    width:120px;
-    margin : 20px 20px 0 20px ;
-   
+
+.header__logo {
+    width: 120px;
+    margin: 20px 20px 0 20px;
+
 }
-.header__nav{
+
+.header__nav {
     display: flex;
     justify-content: space-evenly;
 }
-.header__option{
+
+.header__option {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
 }
-.header__optionBasket{
+
+.header__optionBasket {
     display: flex;
     margin-top: 7px;
-    color:#dbae6b;
+    color: #dbae6b;
     align-items: center;
 }
-.header__basketCount{
+
+.header__basketCount {
     margin-right: 10px;
     margin-left: 10px;
-    
+
 }
-.header__lineone{
+
+.header__lineone {
     font-size: 13px;
     font-weight: 500;
 }
-.header__linetwo{
+
+.header__linetwo {
     font-size: 15px;
     font-weight: 500;
 }
-.header__link{
+
+.header__link {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
 }
-.header__search{
+
+.header__search {
     display: flex;
-    flex:1;
+    flex: 1;
 }
-.header__searchBar{
+
+.header__searchBar {
     height: 12px;
     width: 100%;
     border: none;
     padding: 10px;
 }
-.header__SearchIcon{
+
+.header__SearchIcon {
     padding: 5px;
     height: 22px !important;
     background-color: #e8670c;
-   
+
 }
