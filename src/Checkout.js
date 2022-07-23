@@ -3,12 +3,14 @@ import { useStateValue } from './StateProvider';
 import ad from './img/ad.jpg';
 import './Checkout.css';
 import CheckoutProduct from './CheckoutProduct';
+import Subtotal from './Subtotal';
 
 
 function Checkout() {
     const [{ basket }] = useStateValue();
     return (
         <div className='checkout'>
+            <div className="checkout__left">
             <img className='checkout__img' src={ad} alt=" Advertise" />
 
             {basket?.length === 0 ? (
@@ -34,12 +36,16 @@ function Checkout() {
                             price={item.price}
                             rating={item.rating}
                         />
-
                     ))}
-
-
                 </div>
-            )}
+                )}
+        </div>
+                {basket.length > 0 && (
+                    <div className="checkout__right">
+                        <h1><i>Subtotal</i></h1>
+                        <Subtotal/>
+                    </div>
+                )}
         </div>
     )
 }
