@@ -1,14 +1,6 @@
 import bk1 from './img/bk1.jpg';
 export const initialState = {
-    basket: [
-        {
-            id: 101,
-            title: "Best suited for those readers who are interested in the vivid stories of Indian mythology, Mrityunjaya is an epic book. paassive...",
-            price: 12,
-            rating: 5,
-            image: bk1,
-        },
-    ],
+    basket: [],
     user: null,
 };
 
@@ -18,6 +10,11 @@ basket?.reduce((amount,item) => item.price + amount,0);
 const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
+        case "SET_USER":
+            return{
+                ...state,
+                user:action.user,
+            };
         case 'ADD_TO_BASKET':
             //logic for adding item to basket
             return {

@@ -17,18 +17,34 @@ import { auth } from "./firebase";
 
 
 function App() {
-  const [{basket}, dispatch]=useStateValue();
+  const [{user}, dispatch]=useStateValue();
   //useEffect 
   //Piece of code which runs based on given condition
   useEffect(() =>{
-    auth.onAuthStateChanged((authUser) =>{
+    const unsubscribe = auth.onAuthStateChanged((authUser) =>{
       if(authUser){
         //use logged in
+
+        dispatch({
+          type:"SET_USER",
+          user:authUser
+        })
       } else{
         //user logged out
+        dispatch({
+          type:"SET_USER",
+          user:null,
+        })
       }
-    })
+    });
+
+    return () =>{
+      //any cleanup operations go here...
+      unsubscribe();
+    }
   },[])
+
+  console.log("User is", user);
   return (
     <Router>
       <div className="app">
